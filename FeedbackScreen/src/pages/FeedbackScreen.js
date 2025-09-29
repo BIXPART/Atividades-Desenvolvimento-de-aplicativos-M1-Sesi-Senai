@@ -17,9 +17,9 @@ export default function pagina1() {
 
     return (
 
-        <View style={{ flex: 1 }}>
-            <Text>Deixe seu feedback</Text>
-            <TextInput multiline={true} placeholder={'Digite aqui'} onChangeText={setFeedback} style={{ flex: 1 }} ></TextInput>
+        <View style={{  }}>
+            <Text style={{margin:50,}}>Deixe seu feedback</Text>
+            <TextInput style={{borderWidth: 3,borderRadius:15,borderColor:'gray'}} multiline={true} placeholder={'Digite aqui'} onChangeText={setFeedback} ></TextInput>
             <VerificarTexto textoAtual={feedback.length} limiteMaximo={20}/>
             <Button title='Enviar FeedBack' onPress={carregarFeddback} ></Button>
 
